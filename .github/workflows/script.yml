@@ -1,9 +1,13 @@
 name: flyway
  
-on:
+ on:
   push:
     branches: 
       - main
+  pull_request:
+    branches:
+      - main
+      - KK-**
  
 jobs:
   deploy:
